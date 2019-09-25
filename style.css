@@ -1,0 +1,10 @@
+html {
+  font-family: monospace;
+  font-size: 10pt;
+  background-color: hsl(0, 0%, 96%);
+}
+
+.container{
+  width: 50%;
+}
+

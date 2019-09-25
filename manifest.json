@@ -1,0 +1,22 @@
+{
+  "name": "HID Console",
+  "manifest_version": 2,
+  "version": "0.1",
+  "minimum_chrome_version": "45.0.2439.3",
+  "app": {
+    "background": {
+      "scripts": [ "main.js" ]
+    }
+  },
+  "permissions": ["hid", {
+    "usbDevices": [
+      { "vendorId": 2321, "productId": 6212  },
+      { "vendorId": 1155, "productId": 22352 }
+ 
+    ]
+  }
+],
+"icons": { "16": "icon16.png",
+  "48": "icon48.png",
+ "128": "icon128.png" }
+}

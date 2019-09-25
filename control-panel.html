@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="control-panel.js"></script>
+</head>
+
+<body>
+
+  <section class="hero is-small is-dark is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div id="device-panel">
+            <button class="button is-danger is-rounded">HID Console</button>
+          <div class="select is-rounded">
+            <select id="device-selector"></select>
+          </div>
+          <button class="button" id="connect">Connect</button>
+          <button class="button" id="disconnect">Disconnect</button>
+          <button class="button" id="add-device">Add Device...</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <div class="box" id="output-panel">
+          <h3><strong> OUTPUT REPORT</strong></h3> <br>
+          <div class="field has-addons">
+            <p class="control">
+              <a class="button is-static">
+                Report ID &nbsp;
+              </a>
+            </p>
+            <p class="control">
+              <input class="input" type="number" id="out-id" min="0" max="255" value="0">
+            </p>
+          </div>
+          <div class="field has-addons">
+            <p class="control">
+              <a class="button is-static">
+                Report Size
+              </a>
+            </p>
+            <p class="control">
+              <input class="input" type="number" id="out-size" min="0" max="64" value="1">
+            </p>
+          </div>
+          <div class="field has-addons">
+            <p class="control">
+              <a class="button is-static">
+                Report Contents
+              </a>
+            </p>
+            <p class="control">
+              <input class="input" id="out-data" value="" size="68" style="width:100%">
+            </p>
+          </div>
+          <button class="button" id="send">Send Report</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <div class="box" id="input-panel">
+          <h3><strong>INPUT REPORT</strong></h3> <br>
+          <div class="field has-addons">
+            <p class="control">
+              <a class="button is-static">
+                Expected Report Size
+              </a>
+            </p>
+            <p class="control">
+              <input class="input" type="number" id="in-size" value="64" min="1" max="64">
+            </p>
+          </div>
+          <label>Enable polling</label>
+          <input class="is-checkradio" type="checkbox" id="in-poll"><br>
+          <br>
+          <textarea class="textarea; has-background-dark; has-text-danger" id="input-log"
+            style="width:100%; background-color:  hsl(0, 0%, 96%); font-size: 12px; resize: none;" rows="16"
+            readonly></textarea><br>
+          <button class="button" id="receive">Read Report (cancels polling)</button>
+          <button class="button" id="clear">Clear</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer has-background-light">
+    <div class="columns is-vcentered is-multiline">
+      <div class="column">
+        <div class="content has-text-centered">
+          <div style="margin-bottom: 10px">
+            <a target="_blank" href="https://www.usbhid.io"><strong class="has-text-danger">©USBHID.io</strong></a> by
+            <a target="_blank" href="https://www.linkedin.com/in/ted-nivan-027680b2/">Ted
+              Jack Nivan</a>. <br>
+            <i> ⚡ powering developers</i> <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
