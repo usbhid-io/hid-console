@@ -1,4 +1,4 @@
-<a target="_blank" href="https://usbhid.io">![Try it now in CWS](png/usbhid.png "Click here to go to usbhid.io")</a>
+<a target="_blank" href="https://usbhid.io">![Try it now in CWS](usbhid.png "Click here to go to usbhid.io")</a>
 
 
 HID Console App
@@ -14,4 +14,4 @@ The HID Device must have this information: (`VID: 1155`, `PID: 22352`).
 * [Window](https://developer.chrome.com/apps/app_window)
 
 ## Screenshot
-![screenshot](png/hid-console.png)
+![screenshot](hid-console.png)
