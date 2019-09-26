@@ -1,10 +1,11 @@
-<a target="_blank" href="https://chrome.google.com/webstore/detail/ohndmecdhlgohpibepbboddcoecomnpc">![Try it now in CWS](https://raw.github.com/GoogleChrome/chrome-app-samples/master/tryitnowbutton.png "Click here to install this sample from the Chrome Web Store")</a>
+<a target="_blank" href="https://usbhid.io">![Try it now in CWS](png/usbhid.png "Click here to go to usbhid.io")</a>
 
 
-chrome.hid API Sample
+HID Console App
 =====================
 
-This sample demonstrates usage of the `chrome.hid` API.
+Send and Receive HID reports.
+The HID Device must have this information: (`VID: 1155`, `PID: 22352`).
 
 ## APIs
 
@@ -13,4 +14,4 @@ This sample demonstrates usage of the `chrome.hid` API.
 * [Window](https://developer.chrome.com/apps/app_window)
 
 ## Screenshot
-![screenshot](/samples/hid/assets/screenshot_1280_800.png)
+![screenshot](png/hid-console.png)

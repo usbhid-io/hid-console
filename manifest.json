@@ -2,6 +2,7 @@
   "name": "HID Console",
   "manifest_version": 2,
   "version": "0.1",
+  "description": "Send and Receive HID reports to / from (VID: 1155, PID: 22352)",
   "minimum_chrome_version": "45.0.2439.3",
   "app": {
     "background": {
@@ -10,13 +11,11 @@
   },
   "permissions": ["hid", {
     "usbDevices": [
-      { "vendorId": 2321, "productId": 6212  },
       { "vendorId": 1155, "productId": 22352 }
- 
     ]
   }
 ],
-"icons": { "16": "icon16.png",
-  "48": "icon48.png",
- "128": "icon128.png" }
+"icons": { "16": "png/icon16.png",
+  "48": "png/icon48.png",
+ "128": "png/icon128.png" }
 }
